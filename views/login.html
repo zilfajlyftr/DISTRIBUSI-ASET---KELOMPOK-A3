@@ -53,28 +53,30 @@
       <span>⚠️ Email atau password salah. Silakan coba lagi.</span>
     </div>
 
-    <form action="/login" method="POST">
+    <form action="/login" class="form grid gap-3" method="POST">
       <div class="form-item" style="margin-bottom:1.25rem;">
-        <label class="label" for="email">Email</label>
+        <label class="label" for="email" style="display:block; margin-bottom:0.4rem;">Email</label>
         <input
           class="input"
           type="email"
           id="email"
           name="email"
           placeholder="Masukkan email Anda"
-          required
+          aria-invalid="true"
+          required style="width: 100%;"
         >
       </div>
 
       <div class="form-item" style="margin-bottom:1.5rem;">
-        <label class="label" for="password">Password</label>
+        <label class="label" for="password" style="display:block; margin-bottom:0.4rem;">Password</label>
         <input
           class="input"
           type="password"
           id="password"
           name="password"
           placeholder="Masukkan password Anda"
-          required
+          aria-invalid="true"
+          required style="width: 100%;"
         >
       </div>
 
